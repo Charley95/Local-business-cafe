@@ -1,0 +1,27 @@
+body {
+    background-image: url("/assets/Images/landing-page.jpg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-color: rgb(84, 71, 63, 0.9); /* Transparent overlay */
+    background-blend-mode: overlay; 
+    padding: 2rem;
+}
+.font {
+    color: rgb(233, 238, 217);
+    font-family: 'Raleway', sans-serif;
+}
+h1 {
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 1;
+}
+h2 {
+    font-weight: 600;
+    font-size: 30px;
+}
+p {
+    font-weight: lighter;
+    line-height: 1.5;
+}
