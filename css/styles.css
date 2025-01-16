@@ -1,16 +1,46 @@
+* {
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+}
 body {
-    background-image: url("/assets/Images/Background.JPG");
+    display: flex;
+    flex-direction: column;
+    background-image: url("https://pixabay.com/get/g64f61202152bcdeb4008559356b1fb874fb00a7d3e22d21cb7f94cd137d8babcdf1044e09f3a9d108321c4e6801ebd019ceca9bed35f8921ae658e80a9df74b7_1920.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh;
+    background-attachment: fixed;
     background-color: rgb(84, 71, 63, 0.9); /* Transparent overlay */
     background-blend-mode: overlay; 
-    padding: 2rem;
+    margin: 0;
+    min-height: 100vh;
 }
-.font {
+        .navbar {
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+    
+        .navbar-scroll {
+            color: aliceblue;
+        }
+        main {
+            flex: 1;
+        }
+        .landing-page {
+            margin-top: 8rem;
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+    
+        h1,
+        h2,
+        p {
     color: rgb(233, 238, 217);
     font-family: 'Raleway', sans-serif;
+    padding-bottom: 2rem;
 }
 h1 {
     font-weight: 900;
@@ -25,3 +55,10 @@ p {
     font-weight: lighter;
     line-height: 1.5;
 }
+footer {
+    text-align: center;
+    padding-top: 3rem;
+    margin-top: 30px;
+    background-color: rgb(84, 71, 63, 0.8); /* Charcoal */
+    color: rgb(233, 238, 217);
+  }
