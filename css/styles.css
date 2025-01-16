@@ -8,7 +8,7 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
-    background-image: url("https://pixabay.com/get/g64f61202152bcdeb4008559356b1fb874fb00a7d3e22d21cb7f94cd137d8babcdf1044e09f3a9d108321c4e6801ebd019ceca9bed35f8921ae658e80a9df74b7_1920.jpg");
+    background-image: url("https://cdn.pixabay.com/photo/2017/08/06/07/09/coffee-2589759_1280.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -54,6 +54,16 @@ h2 {
 p {
     font-weight: lighter;
     line-height: 1.5;
+}
+button {
+    background-color: rgb(233, 238, 217);
+    color: rgb(84, 71, 63);
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: auto;
 }
 footer {
     text-align: center;
