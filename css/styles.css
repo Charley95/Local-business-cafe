@@ -13,10 +13,17 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-color: rgb(84, 71, 63, 0.9); /* Transparent overlay */
+    background-color: rgb(0, 0, 0, 0.7); /* Transparent overlay */
     background-blend-mode: overlay; 
     margin: 0;
     min-height: 100vh;
+}
+.about-section,
+ .contact-section,
+ .category-section,
+ .products-section{
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
 }
         .navbar {
             padding-left: 1rem;
@@ -34,10 +41,18 @@ body {
             padding-left: 2rem;
             padding-right: 2rem;
         }
-    
+        .other-pages {
+            padding-top: 5rem;
+        }
+        p, ul {
+            color: rgb(233, 238, 217);
+    font-family: 'Raleway', sans-serif;
+    padding-top: 0;
+    line-height: 1.5;
+        }
         h1,
         h2,
-        p {
+        p.paragraphs {
     color: rgb(233, 238, 217);
     font-family: 'Raleway', sans-serif;
     padding-bottom: 2rem;
@@ -46,25 +61,140 @@ h1 {
     font-weight: 900;
     font-size: 50px;
     line-height: 1;
+    color: rgb(203, 210, 164);
 }
 h2 {
     font-weight: 600;
     font-size: 30px;
+    color: rgb(203, 210, 164);
 }
-p {
-    font-weight: lighter;
-    line-height: 1.5;
-}
-button {
-    background-color: rgb(233, 238, 217);
+
+.button {
+    background-color: rgb(233, 238, 217, 0.8);
     color: rgb(84, 71, 63);
-    border: none;
+    border: 2px solid rgb(154, 126, 111);
+    border-radius: 7px;
     padding: 0.5rem 1rem;
     font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.3s;
-    margin-left: auto;
+    width: 100px;
+    height: 50px;
+    display: inline-block;
+    margin-right: 2rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
 }
+.button:hover {
+    background-color: rgb(154, 126, 111);
+    color: rgb(233, 238, 217);
+}
+/* Categories Grid */
+.categories {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .category {
+    background-color: rgb(233, 238, 217);
+    border: 1px solid #D3D3D3; /* Soft Gray */
+    border-radius: 10px;
+    padding: 1.5rem;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .category img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+  }
+  
+  .category h3 {
+    font-size: 1.8rem;
+    margin: 1rem 0 0.5rem 0;
+    color: rgb(84, 71, 63);
+  }
+  
+  .category p {
+    font-size: 1rem;
+    color: #5C8A89; /* Muted Teal */
+    margin-bottom: 1rem;
+  }
+  
+  .category .btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: rgb(154, 126, 111); /* Dusty Rose */
+    color: #FFF; /* White */
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .category .btn:hover {
+    background-color: #A56C69; /* Darker Dusty Rose */
+  }
+  
+  .category:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  /* Products Grid */
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+  }
+  
+  .product {
+    background-color:rgb(233, 238, 217);
+    border: 1px solid #D3D3D3; /* Soft Gray */
+    border-radius: 10px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .product img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+  }
+  
+  .product h3 {
+    font-size: 1.8rem;
+    margin: 1rem 0 0.5rem 0;
+    color: rgb(84, 71, 63);
+  }
+  
+  .product p {
+    font-size: 1rem;
+    color: #5C8A89; /* Muted Teal */
+  }
+  
+  .product .price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgb(154, 126, 111); /* Dusty Rose */
+    margin-top: 1rem;
+  }
+  
+  .product:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
 footer {
     text-align: center;
     padding-top: 3rem;
