@@ -38,8 +38,8 @@ body {
         }
         .scrolled {
           background: linear-gradient(to right, rgb(84, 71, 63), rgb(154, 126, 111));
-          transition: background-color 0.3s ease;
-          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+          transition: background-color 0.5s ease;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.9);
         }
         .clicked {
           background: linear-gradient(to right, rgb(84, 71, 63), rgb(154, 126, 111));
