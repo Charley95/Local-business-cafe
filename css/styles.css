@@ -8,7 +8,6 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
-    /*background-image: url("https://cdn.pixabay.com/photo/2017/08/06/07/09/coffee-2589759_1280.jpg");*/
     background-size: cover;
     background-image: url("../assets/Background.JPG");
     background-position: center;
@@ -29,10 +28,22 @@ body {
         .navbar {
             padding-left: 1rem;
             padding-right: 1rem;
+            transition: background-color 0.5s ease, box-shadow 0.5s ease; /* Smooth transition */
+            z-index: 1000;
         }
     
-        .navbar-scroll {
-            color: aliceblue;
+        #navbarNav {
+          text-align: center;
+          height: 100vh;
+        }
+        .scrolled {
+          background: linear-gradient(to right, rgb(84, 71, 63), rgb(154, 126, 111));
+          transition: background-color 0.3s ease;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        .clicked {
+          background: linear-gradient(to right, rgb(84, 71, 63), rgb(154, 126, 111));
+          transition: background-color 0.3s ease;
         }
         main {
             flex: 1;
@@ -182,6 +193,7 @@ h2 {
     border: 1px solid #D3D3D3; /* Soft Gray */
     border-radius: 5px;
     background-color: #FFF;
+    margin-top: 0;
   }
   
   .contact-form button {
