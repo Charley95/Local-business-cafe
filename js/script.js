@@ -9,9 +9,9 @@ document.addEventListener("scroll", function () {
 
   
   const button = document.querySelector(".navbar-toggler");
-  button.addEventListener("click", function () { //this line listens for a click on the page
+  button.addEventListener("click", function () { //this line listens for a click on the navbar button
     const navButton = document.querySelector(".navbar"); //this line selects the navbar
-        navButton.classList.add("clicked"); //this line adds the class "clicked" to the navbar when the page is clicked
+        navButton.classList.toggle("clicked"); //this line adds and removes the class "clicked" to the navbar when the navbar button is clicked 
     
   });
 
