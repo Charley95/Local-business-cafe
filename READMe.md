@@ -6,8 +6,10 @@ The user should be able to:
 - quickly navigate to a desired page of the website by clicking the required menu element on the navigation bar.
 - browse through the different pages of the website.
 - see the scroll effect on the navbar whenever there is a scroll on the page.
+
 ![before scroll](./assets/before%20scroll.png)
 the image above shows the state of the navbar when you load up the page before a scroll on the page.
+
 ![Scroll feature](./assets/scroll%20state.png)
 the image above shows the state of the navbar when a user scrolls on the page in order to maintain legibilty.
 
